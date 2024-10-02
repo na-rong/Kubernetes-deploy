@@ -54,6 +54,47 @@ docker push your-dockerhub-username/my-spring-app
 ```
 ![image](https://github.com/user-attachments/assets/84c18a41-7757-429f-b816-1859f29d54be)
 ![image](https://github.com/user-attachments/assets/29365ae0-4d3e-424f-b985-4262072ba6d7)
+
+---
+### 5. Spring APP Kubernets에 배포
+- 3개의 컨테이너(pods) 생성
+```bash
+# Minikube 클러스터 시작
+minikube start
+
+# Docker Hub에 푸시한 Spring 이미지로 Deployment를 생성한 것을 3개로 구성해서 생성 및 배포
+kubectl create deployment spring-app --image=your-dockerhub-username/my-spring-app --replicas=3
+![image](https://github.com/user-attachments/assets/5c8ec4fc-8e9f-4517-b976-bab86de2a31d)
+
+# 서비스 확인
+kubectl get services
+```
+
+- 서비스 생성
+```bash
+- # Pod 및 서비스 상태 확인
+kubectl get pods
+kubectl get services
+
+# 배포를 외부 로드밸런서를 통해 포트 80으로 노출하는 설정(로컬 test용)
+kubectl expose deployment spring-app --type=LoadBalancer --port=80 --target-port=8999
+
+# Minikube에서 외부 IP 제공받기 위한 터널링
+# 전후 확인(대기상태) -> 외부 접속 가능한 활성화 상태로 변경
+# ✨ minikube tunnel 명령어 입력후 출력 확인후 ctrl+z로 종료가 아닌 명령 프롬프트로 이동해야 
+# 참고 : ctrl+c 는 프로세스 완전 종료, ctrl+z 는 프로세스 일시 정지를 의미 
+minikube tunnel  
+minikube ip
+kubectl get services
+```
+![image](https://github.com/user-attachments/assets/7f79c53f-4cab-45ad-83d9-c211068f420b)
+
+- 포트 추가해주기
+![image](https://github.com/user-attachments/assets/eb0c79fd-53cd-4148-a356-6955ab3c20ec)
+
+### 6. 결과 화면
+![image](https://github.com/user-attachments/assets/b27da826-30e3-4593-bff1-27dd706ebe7b)
+![image](https://github.com/user-attachments/assets/a3a65341-3c3f-4694-a8c5-924122f9e744)
 ## 📈 결론
 
 
