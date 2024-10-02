@@ -7,6 +7,9 @@
 <br>
 이 과정은 Kubernetes에서 컨테이너 기반 애플리케이션을 어떻게 배포하고 관리하는지에 대한 깊이 있는 이해를 목표로 합니다.
 
+## 사용 기술
+![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![k8s](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) ![]()
 
 ## 📚 학습 및 진행 과정
 
