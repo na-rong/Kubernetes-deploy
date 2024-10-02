@@ -1,7 +1,11 @@
-# Kubernetes 프로젝트 (2024-10-02) 🚀
+# Kubernetes 프로젝트 🚀
 
 ## 📝 개요
-이 프로젝트는 **Kubernetes 환경에서 Spring app**를 배포하고, 3개의 Pod와 1개의 외부 통신이 가능한 Service를 설정하는 실습 과정입니다. 또한, 간단한 Spring 애플리케이션을 데이터베이스 없이 배포하는 것도 목표로 합니다. 이 과정은 Kubernetes에서 컨테이너 기반 애플리케이션을 어떻게 배포하고 관리하는지에 대한 깊이 있는 이해를 목표로 합니다.
+이 프로젝트는 **Kubernetes 환경에서 Spring app**를 배포하고, 3개의 Pod와 1개의 외부 통신이 가능한 Service를 설정하는 실습 과정입니다.
+<br>
+또한, 간단한 Spring 애플리케이션을 데이터베이스 없이 배포하는 것도 목표로 합니다.
+<br>
+이 과정은 Kubernetes에서 컨테이너 기반 애플리케이션을 어떻게 배포하고 관리하는지에 대한 깊이 있는 이해를 목표로 합니다.
 
 
 ## 📚 학습 및 진행 과정
@@ -95,6 +99,8 @@ kubectl get services
 ### 6. 결과 화면
 ![image](https://github.com/user-attachments/assets/b27da826-30e3-4593-bff1-27dd706ebe7b)
 ![image](https://github.com/user-attachments/assets/a3a65341-3c3f-4694-a8c5-924122f9e744)
+
+--- 
 
 ## 🚀 트러블 슈팅 
 - 이미 실행 중인 터널 프로세스가 있다는 오류
