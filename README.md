@@ -105,6 +105,9 @@ kubectl get services
 
 --- 
 
+![image](https://github.com/user-attachments/assets/2e5cac74-1698-41b9-86d9-6202ec072792)
+![image](https://github.com/user-attachments/assets/22ec0c1f-6954-4ffe-a2b8-3488491d6509)
+
 ## 🚀 트러블 슈팅 
 - 이미 실행 중인 터널 프로세스가 있다는 오류
  ![image](https://github.com/user-attachments/assets/433029ed-7b6d-4684-891a-9d671f1216aa)
