@@ -105,7 +105,7 @@ kubectl get services
 ## 🚀 트러블 슈팅 
 - 이미 실행 중인 터널 프로세스가 있다는 오류
  ![image](https://github.com/user-attachments/assets/433029ed-7b6d-4684-891a-9d671f1216aa)
-- 현재 실행 중인
+- 현재 실행 중인 터널 프로세스 확인
 ```bash
 ps aux | grep minikube
 ```
